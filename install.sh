@@ -26,23 +26,23 @@ fi
 $i xorg 
 $i intel-microcode nvidia-driver
 $i linux-headers-$(uname -r) build-essential make ninja-build fuse automake pkg-config cmake autoconf git python3-pip g++
-$i libncurses-dev flex bison openssl libssl-dev dkms libelf-dev pkg-config liblz4-tool bc rsync debhelper
+$i libncurses-dev flex bison openssl libssl-dev dkms libelf-dev pkg-config liblz4-tool bc rsync debhelper dwarves 
 $i curl wget
 $i unzip tar gzip
 $i pulseaudio pavucontrol 
 $i chromium-l10n fonts-noto fonts-noto-cjk fonts-noto-extra fonts-noto-color-emoji
-$i kitty dunst libnotify-bin flameshot lxapparence feh ristretto tumbler gedit python3.11-venv ripgrep lxpolkit pcmanfm zathura htop
+$i kitty dunst libnotify-bin flameshot lxappearance feh ristretto tumbler gedit python3.11-venv ripgrep lxpolkit pcmanfm zathura htop ntfs-3g mpv
 
 #openbox
 #$i openbox obconf 
 
 # i3 gaps
-#$i meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
+$i meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
 
-#cd
-#git clone https://github.com/Airblader/i3 i3-gaps
-#cd i3-gaps
-#mkdir -p build && cd build
-#meson --prefix /usr/local
-#ninja
-#$s ninja install
+cd
+git clone https://github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+mkdir -p build && cd build
+meson --prefix /usr/local
+ninja
+$s ninja install
