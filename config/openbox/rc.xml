@@ -160,61 +160,60 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <!-- recorrer ventanas -->
-    <keybind key="W-d">
+
+<!-- ###########################################################3 -->
+
+    <!-- ventanas -->
+      <keybind key="W-S-w">
+        <action name="MaximizeFull"/>
+      </keybind>
+      
+      <keybind key="W-S-s">
+        <action name="Unmaximize"/>
+      </keybind>
+
+      <keybind key="W-w">
       <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeEast"/>
+      <action name="MaximizeHorizontal"/>
+      <action name="MoveResizeTo">
+        <width>100%</width>
+        <height>50%</height>
+        <x>0</x>
+        <y>0</y>
+      </action>
     </keybind>
-    <keybind key="W-a">
-      <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeWest"/>
-    </keybind>
+
     <keybind key="W-s">
       <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeSouth"/>
+      <action name="MaximizeHorizontal"/>
+      <action name="MoveResizeTo">
+        <width>100%</width>
+        <height>50%</height>
+        <x>0</x>
+        <y>-0</y>
+      </action>
     </keybind>
-    <keybind key="W-w">
+
+     <keybind key="W-a">
       <action name="UnmaximizeFull"/>
-      <action name="GrowToEdgeNorth"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>0</x>
+        <y>0</y>
+      </action>
     </keybind>
-    <!--   <keybind key="W-A-Up"> -->
-    <!--   <action name="UnmaximizeFull"/> -->
-    <!--   <action name="MaximizeHorizontal"/> -->
-    <!--   <action name="MoveResizeTo"> -->
-    <!--     <width>100%</width> -->
-    <!--     <height>50%</height> -->
-    <!--     <x>0</x> -->
-    <!--     <y>0</y> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
-    <!-- <keybind key="W-A-Down"> -->
-    <!--   <action name="UnmaximizeFull"/> -->
-    <!--   <action name="MaximizeHorizontal"/> -->
-    <!--   <action name="MoveResizeTo"> -->
-    <!--     <width>100%</width> -->
-    <!--     <height>50%</height> -->
-    <!--     <x>0</x> -->
-    <!--     <y>-0</y> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
-    <!--  <keybind key="W-A-Left"> -->
-    <!--   <action name="UnmaximizeFull"/> -->
-    <!--   <action name="MaximizeVert"/> -->
-    <!--   <action name="MoveResizeTo"> -->
-    <!--     <width>50%</width> -->
-    <!--     <x>0</x> -->
-    <!--     <y>0</y> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
-    <!-- <keybind key="W-A-Right"> -->
-    <!--   <action name="UnmaximizeFull"/> -->
-    <!--   <action name="MaximizeVert"/> -->
-    <!--   <action name="MoveResizeTo"> -->
-    <!--     <width>50%</width> -->
-    <!--     <x>-0</x> -->
-    <!--     <y>0</y> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+
+    <keybind key="W-d">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>-0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+
     <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -225,48 +224,57 @@
         <to>2</to>
       </action>
     </keybind>
+
     <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
+
     <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
+
     <keybind key="W-5">
       <action name="GoToDesktop">
         <to>5</to>
       </action>
     </keybind>
+
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
+
     <keybind key="W-S-2">
       <action name="SendToDesktop">
         <to>2</to>
       </action>
     </keybind>
+
     <keybind key="W-S-3">
       <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
+
     <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
+
     <keybind key="W-S-5">
       <action name="SendToDesktop">
         <to>5</to>
       </action>
     </keybind>
+
     <!--ver escritorio -->
-    <keybind key="C-S-Z">
+    <keybind key="W-S-z">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- cerrar ventana -->
@@ -313,10 +321,10 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Keybindings for dmenu  -->
+    <!-- Keybindings for rofi  -->
     <keybind key="W-S-d">
       <action name="Execute">
-        <command>dmenu_run</command>
+        <command>rofi -show drun</command>
       </action>
     </keybind>
     <!-- Keybindings for flameshot  -->
@@ -361,16 +369,23 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <!-- Keybinding for pavucontrol  -->
+    <!-- Keybinding for kitty  -->
     <keybind key="W-Return">
       <action name="Execute">
         <command>kitty</command>
       </action>
     </keybind>
-    <!-- control para el volumen -->
+    <!-- open chromium -->
     <keybind key="W-S-b">
       <action name="Execute">
         <command>chromium</command>
+      </action>
+    </keybind>
+
+    <!-- open nitrogen-->
+    <keybind key="W-S-n">
+      <action name="Execute">
+        <command>nitrogen</command>
       </action>
     </keybind>
     <!-- User Keybindings -->
@@ -657,7 +672,7 @@
           <to>next</to>
         </action>
       </mousebind>
-      <mousebind button="Left" action="Press">
+      <mousebind button="Let" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
