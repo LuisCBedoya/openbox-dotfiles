@@ -34,7 +34,7 @@ $i alsa-utils alsa-firmware-loaders alsa-oss alsa-tools alsamixergui volumeicon-
 $i lame libdvdnav4 libfaac0 libmad0 libmp3lame0 libquicktime2 libstdc++5 libxvidcore4 twolame vorbis-tools x264
 $i gstreamer1.0-x gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-alsa gstreamer1.0-pulseaudio gstreamer1.0-tools
 $i chromium-l10n fonts-noto fonts-noto-cjk fonts-noto-extra fonts-noto-color-emoji
-$i kitty dunst libnotify-bin flameshot lxappearance nitrogen ristretto tumbler python3.11-venv ripgrep lxpolkit thunar zathura htop ntfs-3g
+$i kitty dunst libnotify-bin geany flameshot lxappearance nitrogen phototonic python3.11-venv ripgrep lxpolkit thunar zathura htop ntfs-3g
 
 #openbox
 #$i openbox obconf
